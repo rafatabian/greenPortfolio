@@ -53,6 +53,7 @@
     box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
     min-width: 400px;
     max-height: 175px;
+    min-height: 175px;
 }
 .skills_first_square > h1,
 .skills_second_square > h1,
