@@ -38,7 +38,7 @@ useEffect(() => {
 
 // check input value length and trugger fall down
 useEffect(() => {
-   if(inputValue.length === 10){
+   if(inputValue.length === 10 || inputValue.length === 0){
       handleEnter({key:"Enter"})
    }
 }, [inputValue])

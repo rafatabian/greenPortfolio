@@ -19,10 +19,27 @@
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
+}
+.navbar_logo > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 8px;
+    height: 100%;
+}
+.navbar_logo > a > svg{
+    /* margin: 0 8px; */
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: white;
 }
 .navbar_logo h1{
   font-family: "Figtree";
   color: white;
+  margin-right: 60px;
 }
 .navbar_buttons{
     height: 100%;
@@ -30,6 +47,7 @@
     align-items: center;
     justify-content: flex-end;
 }
+
 .navbar_buttons > div{
     display: flex;
     align-items: center;
@@ -82,9 +100,6 @@
 /*
  mobile 
  */
- .btns_mobile{
-    display: none; 
-}
 .showNavMenu{
     display: block;
     position: absolute;
@@ -113,13 +128,7 @@
     color: white;
     margin-right: 15px;
 }
-.nav_mobile_cont{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    flex-direction: row-reverse;
-    padding: 0 1rem;
-}
+
 .navbar_close_menu{
     position: absolute;
     z-index: 99;
@@ -133,5 +142,32 @@
 @media screen and (min-width:1440px){
     .navbar_container{
         padding: 0 calc((100vw -  1200px) / 2);
+    }
+}
+@media screen and (max-width:780px){
+    .navbar_container{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: row-reverse;
+        padding: 0 1rem;
+    }
+    .navbar_buttons{
+        display: none;
+    }
+    .navbar_logo > a{
+        position: absolute;
+    }
+    .navbar_logo > a:nth-child(2){
+        right: 16px;
+    }
+    .navbar_logo > a:nth-child(3){
+       right: 50px;
+    }
+}
+@media screen and (min-width:781px){
+    .navbar_mobile_menu,
+    .navbar_close_menu{
+         display: none; 
     }
 }

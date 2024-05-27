@@ -2,9 +2,8 @@ import "./Navbar.css"
 import { GoHome, GoHomeFill } from "react-icons/go"
 import { BsInfoCircle, BsInfoCircleFill } from "react-icons/bs"
 import { IoDesktopOutline, IoDesktop, IoMenu, IoClose} from "react-icons/io5"
-import { FaRegLightbulb, FaLightbulb} from "react-icons/fa6"
+import { FaRegLightbulb, FaLightbulb, FaGithub, FaLinkedin} from "react-icons/fa6"
 import { useEffect, useState } from "react"
-
 
 const Navbar = ({scrollToSection}) => {
   const[homeIco, setHomeIco] = useState(false)
@@ -18,7 +17,7 @@ const Navbar = ({scrollToSection}) => {
 useEffect(() => {
   const width = window.innerWidth
   if(width < 600){
-    setMobile(true)
+    // setMobile(true)
   }
 }, [])
 
@@ -37,16 +36,23 @@ useEffect(() => {
  }
 }, [toggleMenu])
 
+// clicking mobile menu
+const toggleMobileMenu = () => {
+  setToggleMenu(true)
+}
+
   return (
-    <div className={`navbar_container ${mobile ? "nav_mobile_cont" : ""}`}>
+    <div className="navbar_container">
      <div className="navbar_logo">
       <h1>F</h1>
+         <a href="https://github.com/rafatabian"><FaGithub /></a>
+         <a href="https://www.linkedin.com/in/fabian-rata-781389281"><FaLinkedin /></a>
      </div>
     
-    {mobile && !toggleMenu ? <div className="navbar_mobile_menu"><IoMenu onClick={() => setToggleMenu(true)}/></div> : null}
+    {!toggleMenu ? <div className="navbar_mobile_menu"><IoMenu onClick={() => toggleMobileMenu()}/></div> : null}
 
-     <div className={`${mobile ? "btns_mobile" : "navbar_buttons"} ${toggleMenu ? "showNavMenu" : ""}`}>
-      {mobile && toggleMenu ? <IoClose onClick={() => setToggleMenu(false)} className="navbar_close_menu"/> : null}
+      <div className={` ${toggleMenu ? "showNavMenu" : "navbar_buttons"}`}>
+      {toggleMenu ? <IoClose onClick={() => setToggleMenu(false)} className="navbar_close_menu"/> : null}
        <div className="navbar_buttons_home" onMouseEnter={() => setHomeIco(true)} onMouseLeave={() => setHomeIco(false)} onClick={() => handleClick("home")}>
         {homeIco ? < GoHomeFill/> : <GoHome />}  
         <h2 className="navbar_buttons_text">HOME</h2>

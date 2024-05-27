@@ -17,6 +17,7 @@ const copyEmail = () => {
     navigator.clipboard.writeText(email)
         .then(() => {
             setSucces(1)
+            setTimeout(() => setSucces(0), [1000])
         })
         .catch(() => {
             console.error('Failed to copy');
