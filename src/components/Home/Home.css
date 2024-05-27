@@ -95,10 +95,6 @@ text-align: center;
     background-color: #00522c;
 }  
 
-#home_type_effect{
-   font-size:25px;
-   animation: typeEffect 1s infinite;
-}
 .home_email{
     display: flex;
     align-items: center;
@@ -114,6 +110,44 @@ text-align: center;
     cursor: pointer;
     color: var(--green);
     margin-left: 5px;
+}
+/* input animation */
+#london{
+    font-size: 25px;
+    font-family: "Figtree";
+    color: var(--green);
+    transform-origin: top left;
+    width: 100px;
+    z-index: 99;
+}
+#london:focus{
+    outline: none;
+}
+@keyframes inputAnim {
+    0% {
+        transform: rotate(0deg);
+    }
+    20% {
+        transform: rotate(120deg);
+    }
+    35% {
+        transform: rotate(45deg);
+    }
+    50% {
+        transform: rotate(110deg);
+    }
+    65% {
+        transform: rotate(90deg);
+    }
+    75% {
+        transform: rotate(100deg);
+    }
+    85% {
+        transform: rotate(95deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(90deg); /* Fall down off the screen */
+    }
 }
 
 @media screen and (max-width: 700px){

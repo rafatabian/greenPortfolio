@@ -5,16 +5,11 @@ import { useEffect, useState } from "react"
 import { FaSquareCheck, FaCopy } from "react-icons/fa6"
 
 const Home = () => {
-  const[typeEffect, setTypeEffect] = useState(true)
   const[showEmail, setShowEmail] = useState(false) 
   const[email, setEmail] = useState("fabianrwork@gmail.com")
   const[succes, setSucces] = useState(0)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setTypeEffect(!typeEffect)
-    }, 500)
-  }, [typeEffect])
+  const[inputValue, setInputValue] = useState("London")
+  const[inputAnimation, setInputAnimation] = useState(null)
 
   //go to mail
   const goToMail = () => {
@@ -27,12 +22,37 @@ const Home = () => {
     navigator.clipboard.writeText(email)
         .then(() => {
             setSucces(1)
+            setTimeout(() => setSucces(0), [1000])
         })
         .catch(() => {
             console.error('Failed to copy');
         });
 }
 
+// auto click the input to make it ready to type
+useEffect(() => {
+  if(!navigator.userAgent.match(/(iPad|iPhone|iPod|Android|webOS|BlackBerry|Windows Phone)/i)){
+    document.getElementById("london").focus()
+  }
+}, [])
+
+// check input value length and trugger fall down
+useEffect(() => {
+   if(inputValue.length === 10){
+      handleEnter({key:"Enter"})
+   }
+}, [inputValue])
+
+// handle input enter
+const handleEnter = (key) => {
+  if(key.key === "Enter" || key.key === " "){
+      setInputAnimation(true)
+      setTimeout(() => {
+         setInputAnimation(false)
+         setInputValue("London")
+      }, [3000])
+  }
+}
 
   return (
     <div className="home_container">
@@ -42,7 +62,7 @@ const Home = () => {
           <p>Hello</p>
           <h1>I'm Fabian</h1>
           <h2>Front-end developer</h2>
-          <h2>based in London {<span id="home_type_effect" style={{color: typeEffect ? "#002d28" : "transparent"}}>|</span>}</h2>
+          <h2>based in <input type="text" spellCheck="false" value={inputValue} id="london" onChange={(e) => setInputValue(e.target.value)} maxLength="10" onKeyDown={(key) => handleEnter(key)} style={{animation: inputAnimation ? "inputAnim 3s ease-in-out" : ""}}/></h2>
         </div>
         <div className="home_btn_and_email">
            {!showEmail ? <button onClick={() => goToMail()} className="home_hire_btn">HIRE ME</button>
