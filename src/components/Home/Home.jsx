@@ -73,7 +73,7 @@ const handleEnter = (key) => {
       </div>
 
       <div className="home_anim_container">
-        {/* <Lottie loading="lazy" className="home_first-anim" animationData={animationData} /> */}
+        <Lottie loading="lazy" className="home_first-anim" animationData={animationData} />
       </div>
      </div>
     </div>

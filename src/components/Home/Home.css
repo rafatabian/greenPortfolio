@@ -29,11 +29,11 @@
 }
 .home_text{
     width: 100%;
-    /* background-color: #00522c; */
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 .home_btn_and_email{
     width: 100%;
