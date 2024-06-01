@@ -1,7 +1,7 @@
 import "./Projects.css"
-import store from "../../assets/store_img.png"
-import ai from "../../assets/ai_img.png"
-import music from "../../assets/music_img.png"
+import store from "../../assets/store_img.webp"
+import ai from "../../assets/ai_img.webp"
+import music from "../../assets/music_img.webp"
 
 const Projects = () => {
   return (

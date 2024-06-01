@@ -62,7 +62,7 @@ const Home = () => {
             <p>Hello</p>
             <h1>I'm Fabian</h1>
             <h2>Front-end developer</h2>
-            <h2>based in <input type="text" spellCheck="false" value={inputValue} id="london" onChange={(e) => setInputValue(e.target.value)} maxLength="10" onKeyDown={(key) => handleEnter(key)} style={{ animation: inputAnimation ? "inputAnim 3s ease-in-out" : "" }} /></h2>
+            <h2>based in <input type="text" spellCheck="false" value={inputValue} id="london" onChange={(e) => setInputValue(e.target.value)} maxLength="10" onKeyDown={(key) => handleEnter(key)} style={{ animation: inputAnimation ? "inputAnim 3s ease-in-out" : "" }} aria-label="inceractive input"/></h2>
           </div>
           <div className="home_btn_and_email">
             {!showEmail ? <button onClick={() => goToMail()} className="home_hire_btn">HIRE ME</button>
