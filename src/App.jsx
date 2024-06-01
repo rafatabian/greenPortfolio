@@ -30,7 +30,7 @@ const scrollToSection = (id) => {
     <div>
       <Suspense fallback={<h1 id="loading">LOADING...</h1>}>
         <Navbar scrollToSection={scrollToSection}/>
-        {/* <section ref={sectionRefs.home} id="home">
+         <section ref={sectionRefs.home} id="home">
           <Home />
         </section>
         <section ref={sectionRefs.about} id="about">
@@ -44,7 +44,7 @@ const scrollToSection = (id) => {
         </section>
         <section id="footer">
           <Footer scrollToSection={scrollToSection}/>
-        </section>  */}
+        </section>
       </Suspense>
     </div>
   )
