@@ -1,11 +1,11 @@
 import React, { lazy, Suspense, useRef } from "react"
 import "./App.css"
-// import Home from "./components/Home/Home"
-// import Navbar from "./components/Navbar/Navbar"
+import Home from "./components/Home/Home"
+import Navbar from "./components/Navbar/Navbar"
 
 const App = () => {
-  const Home = lazy(() => import("./components/Home/Home"))
-  const Navbar = lazy(() => import("./components/Navbar/Navbar"))
+  // const Home = lazy(() => import("./components/Home/Home"))
+  // const Navbar = lazy(() => import("./components/Navbar/Navbar"))
   const About = lazy(() => import("./components/About/About"))
   const Skills = lazy(() => import("./components/Skills/Skills"))
   const Projects = lazy(() => import("./components/Projects/Projects"))
