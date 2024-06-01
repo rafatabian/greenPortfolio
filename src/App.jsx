@@ -29,7 +29,7 @@ const scrollToSection = (id) => {
   return (
     <div>
       <Suspense fallback={<h1 id="loading">LOADING...</h1>}>
-        <Navbar scrollToSection={scrollToSection}/>
+        {/* <Navbar scrollToSection={scrollToSection}/> */}
         <section ref={sectionRefs.home} id="home">
           {/* <Home /> */}
         </section>
@@ -37,13 +37,13 @@ const scrollToSection = (id) => {
           <About scrollToSection={scrollToSection}/>
         </section>
         <section ref={sectionRefs.skills} id="skills">
-          <Skills/>
+          {/* <Skills/> */}
         </section>
         <section ref={sectionRefs.projects} id="projects">
-          <Projects/>
+          {/* <Projects/> */}
         </section>
         <section id="footer">
-          <Footer scrollToSection={scrollToSection}/>
+          {/* <Footer scrollToSection={scrollToSection}/> */}
         </section> 
       </Suspense>
     </div>
