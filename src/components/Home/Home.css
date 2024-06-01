@@ -57,7 +57,7 @@
 .home_text > p,
 .home_text > h1,
 .home_text > h2{
-font-family: "Figtree";
+/* font-family: "Figtree"; */
 font-weight: 400;
 user-select: none;
 text-align: center;
@@ -86,7 +86,7 @@ text-align: center;
     color: white;
     background-color: var(--green);
     font-size: 16px; 
-    font-family: "Figtree";
+    /* font-family: "Figtree"; */
     cursor: pointer;
     transition: 0.2s;
     border-radius: none;
@@ -101,7 +101,7 @@ text-align: center;
     justify-content: center;
     color: var(--green);
     font-size: 17px;
-    font-family: "Figtree";
+    /* font-family: "Figtree"; */
     margin-top: 10px;
 }
 .home_email > svg{
@@ -114,7 +114,7 @@ text-align: center;
 /* input animation */
 #london{
     font-size: 25px;
-    font-family: "Figtree";
+    /* font-family: "Figtree"; */
     color: var(--green);
     transform-origin: top left;
     width: 100px;
