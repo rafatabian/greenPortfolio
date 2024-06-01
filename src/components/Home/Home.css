@@ -58,6 +58,7 @@
 .home_text > h1,
 .home_text > h2{
 font-family: "Figtree";
+font-display: swap;
 font-weight: 400;
 user-select: none;
 text-align: center;
@@ -87,6 +88,7 @@ text-align: center;
     background-color: var(--green);
     font-size: 16px;
     font-family: "Figtree";
+    font-display: swap;
     cursor: pointer;
     transition: 0.2s;
     border-radius: none;
@@ -102,6 +104,7 @@ text-align: center;
     color: var(--green);
     font-size: 17px;
     font-family: "Figtree";
+    font-display: swap;
     margin-top: 10px;
 }
 .home_email > svg{
@@ -115,6 +118,7 @@ text-align: center;
 #london{
     font-size: 25px;
     font-family: "Figtree";
+    font-display: swap;
     color: var(--green);
     transform-origin: top left;
     width: 100px;
