@@ -43,8 +43,8 @@ const Footer = ({ scrollToSection }) => {
 
       <div className="footer_links_and_text">
         <div>
-          <a href="https://github.com/rafatabian"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/fabian-rata-781389281/"><FaLinkedin /></a>
+          <a href="https://github.com/rafatabian" aria-label="github"><FaGithub /></a>
+          <a href="https://www.linkedin.com/in/fabian-rata-781389281/" aria-label="linkedin"><FaLinkedin /></a>
         </div>
         <div>
           <p onClick={() => scrollToSection("home")}>HOME</p>
