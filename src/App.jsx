@@ -31,10 +31,10 @@ const scrollToSection = (id) => {
       <Suspense fallback={<h1 id="loading">LOADING...</h1>}>
         {/* <Navbar scrollToSection={scrollToSection}/> */}
         <section ref={sectionRefs.home} id="home">
-          {/* <Home /> */}
+          <Home />
         </section>
         <section ref={sectionRefs.about} id="about">
-          <About scrollToSection={scrollToSection}/>
+          {/* <About scrollToSection={scrollToSection}/> */}
         </section>
         <section ref={sectionRefs.skills} id="skills">
           {/* <Skills/> */}
