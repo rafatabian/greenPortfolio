@@ -2,14 +2,18 @@ import React, { lazy, Suspense, useRef } from "react"
 import "./App.css"
 import Home from "./components/Home/Home"
 import Navbar from "./components/Navbar/Navbar"
+import About from "./components/About/About"
+import Skills from "./components/Skills/Skills"
+import Projects from "./components/Projects/Projects"
+import Footer from "./components/Footer/Footer"
 
 const App = () => {
   // const Home = lazy(() => import("./components/Home/Home"))
   // const Navbar = lazy(() => import("./components/Navbar/Navbar"))
-  const About = lazy(() => import("./components/About/About"))
-  const Skills = lazy(() => import("./components/Skills/Skills"))
-  const Projects = lazy(() => import("./components/Projects/Projects"))
-  const Footer = lazy(() => import("./components/Footer/Footer"))
+  // const About = lazy(() => import("./components/About/About"))
+  // const Skills = lazy(() => import("./components/Skills/Skills"))
+  // const Projects = lazy(() => import("./components/Projects/Projects"))
+  // const Footer = lazy(() => import("./components/Footer/Footer"))
 
   const sectionRefs = {
     home: useRef(null),
@@ -34,16 +38,16 @@ const App = () => {
           <Home />
         </section>
         <section ref={sectionRefs.about} id="about">
-          {/* <About scrollToSection={scrollToSection} /> */}
+          <About scrollToSection={scrollToSection} />
         </section>
         <section ref={sectionRefs.skills} id="skills">
-          {/* <Skills /> */}
+          <Skills />
         </section>
         <section ref={sectionRefs.projects} id="projects">
-          {/* <Projects /> */}
+          <Projects />
         </section>
         <section id="footer">
-          {/* <Footer scrollToSection={scrollToSection} /> */}
+          <Footer scrollToSection={scrollToSection} />
         </section>
       </Suspense>
     </div>
