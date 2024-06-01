@@ -1,4 +1,4 @@
-.about_conatiner{
+.about_conatiner {
     width: 100%;
     min-height: 100vh;
     background-color: white;
@@ -8,14 +8,17 @@
     flex-direction: column;
     padding: 3rem 0;
 }
-.about_conatiner h1{
+
+.about_conatiner h1 {
     color: var(--green);
     font-family: "Figtree";
+    font-display: optional;
     margin: 2rem 0 1rem 0;
     position: relative;
     font-weight: 500;
 }
-.about_conatiner h1::after{
+
+.about_conatiner h1::after {
     content: "";
     position: absolute;
     width: 63%;
@@ -26,38 +29,47 @@
     right: 0;
     border-radius: 1.5px;
 }
-.about_conatiner div:nth-child(2){
+
+.about_conatiner div:nth-child(2) {
     max-width: 500px;
 }
-.about_conatiner div:nth-child(2) p{
+
+.about_conatiner div:nth-child(2) p {
     text-align: center;
     font-family: "Figtree";
+    font-display: optional;
     font-size: 17.3px;
     color: var(--green);
     margin: 10px 0;
     font-weight: 400;
 }
-#about_type_effect{
+
+#about_type_effect {
     font-size: 17px;
 }
-.about_btn_container{
+
+.about_btn_container {
     margin: 1rem 0 2rem 0;
 }
-.about_btn_container > button:first-child{
- margin: 0 10px;
- background-color: var(--green);
- color: white;
- font-family: "Figtree";
- padding: 10px 20px;
- border: none;
- cursor: pointer;
- transition: 0.2s;
+
+.about_btn_container>button:first-child {
+    margin: 0 10px;
+    background-color: var(--green);
+    color: white;
+    font-family: "Figtree";
+    font-display: optional;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s;
 }
-.about_btn_container > button:first-child:hover{
+
+.about_btn_container>button:first-child:hover {
     background-color: #00522c;
 }
+
 /* second button */
-.about_btn_container > a:nth-child(2){
+.about_btn_container>a:nth-child(2) {
     margin: 0 10px;
     color: var(--green);
     padding: 8px 18px;
@@ -67,16 +79,18 @@
     cursor: pointer;
     text-decoration: none;
     font-family: "Figtree";
+    font-display: optional;
     font-size: 13.5px;
     font-weight: 500;
 }
-.about_btn_container > a:nth-child(2):hover{
+
+.about_btn_container>a:nth-child(2):hover {
     background-color: rgb(238, 238, 238);
 }
 
-@media screen and (max-width: 520px){
-    .about_conatiner{
-      padding: 0 15px 6rem 15px;
-      min-height: unset;
+@media screen and (max-width: 520px) {
+    .about_conatiner {
+        padding: 0 15px 6rem 15px;
+        min-height: unset;
     }
 }
