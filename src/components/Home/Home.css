@@ -57,8 +57,7 @@
 .home_text > p,
 .home_text > h1,
 .home_text > h2{
-font-family: "Figtree";
-font-display: swap;
+font-family: "Figtree", Helvetica;
 font-weight: 400;
 user-select: none;
 text-align: center;
@@ -86,8 +85,8 @@ text-align: center;
     padding: 10px 20px;
     color: white;
     background-color: var(--green);
-    font-size: 16px;
-    font-family: "Figtree";
+    font-size: 16px; 
+    font-family: "Figtree", Helvetica;
     font-display: swap;
     cursor: pointer;
     transition: 0.2s;
@@ -103,7 +102,7 @@ text-align: center;
     justify-content: center;
     color: var(--green);
     font-size: 17px;
-    font-family: "Figtree";
+    font-family: "Figtree", Helvetica;
     font-display: swap;
     margin-top: 10px;
 }
@@ -117,7 +116,7 @@ text-align: center;
 /* input animation */
 #london{
     font-size: 25px;
-    font-family: "Figtree";
+    font-family: "Figtree", Helvetica;
     font-display: swap;
     color: var(--green);
     transform-origin: top left;
