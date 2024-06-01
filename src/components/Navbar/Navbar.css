@@ -37,7 +37,7 @@
     color: white;
 }
 .navbar_logo h1{
-  font-family: "Figtree" Arial, Helvetica, sans-serif;
+  font-family: "Figtree";
   color: white;
   margin-right: 60px;
 }
@@ -59,7 +59,7 @@
 }
 .navbar_buttons_text{
     color: white;
-    font-family: "Figtree" Arial, Helvetica, sans-serif;
+    font-family: "Figtree";
     font-weight: 400;
     font-size: 14.5px;
     margin-left: 3.1px;
