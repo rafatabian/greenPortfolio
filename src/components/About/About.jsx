@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import "./About.css"
-import cv from "../../assets/fabian-rata.pdf"
+import cv from "../../assets/Fabian_CV.pdf"
 import me from "../../assets/me_portfolio.webp"
 
 
