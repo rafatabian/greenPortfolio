@@ -1,7 +1,7 @@
 import "./Projects.css"
 import store from "../../assets/store_img.webp"
-import ai from "../../assets/ai_img.webp"
-import music from "../../assets/music_img.webp"
+import xplora from "../../assets/xplora_img.webp"
+import artech from "../../assets/artech_img.webp"
 
 const Projects = () => {
   return (
@@ -11,43 +11,43 @@ const Projects = () => {
       {/* first proj */}
       <div className="proj_ecommerce">
         <div className="proj_ecommerce_text">
-          <h1>E-COMMERCE PLATFORM</h1>
+          <h1>ARTECH-AGENCY</h1>
 
-          <p>This project stands as one of my proudest achievements. I invested significant effort into its design and functionality, leveraging React to ensure an intuitive user experience with a focus on aesthetics.</p>
-          <a className="proj_bnt_to_proj" href="https://rafatabian.github.io/store/">EXPLORE PROJECT</a>
+          <p>Designed and developed the Artech-Agency website from scratch, including image selection, color palette, site mapping for conversions, and section structure based on design principles. Currently working part-time on improving SEO and performance.</p>
+          <a className="proj_bnt_to_proj" href="https://rafatabian.github.io/artech/">EXPLORE PROJECT</a>
 
         </div>
         <div className="proj_ecommerce_image">
-          <a href="https://rafatabian.github.io/store/">
-            <img src={store} alt="store" />
+          <a href="https://rafatabian.github.io/artech/">
+            <img src={artech} alt="store" />
           </a>
         </div>
       </div>
       {/* second proj */}
       <div className="proj_ai">
         <div className="proj_ai_text">
-          <h1>AI ASSISTANT</h1>
+          <h1>E-COMMERCE PLATFORM</h1>
 
-          <p>Utilizing the power of the OpenAI API, I engineered a personal assistant capable of efficiently handling a variety of tasks through a user-friendly interface.</p>
-          <a className="proj_bnt_to_proj" href="https://rafatabian.github.io/AI-assistant/">EXPLORE PROJECT</a>
+          <p>Built a high-performance e-commerce website using React, inspired by emag.ro. Optimized for SEO, accessibility, and performance through code splitting, lazy loading of components, and compressed images.</p>
+          <a className="proj_bnt_to_proj" href="https://rafatabian.github.io/store/">EXPLORE PROJECT</a>
         </div>
         <div className="proj_ai_image">
-          <a href="https://rafatabian.github.io/AI-assistant/">
-            <img src={ai} alt="ai" />
+          <a href="https://rafatabian.github.io/store/">
+            <img src={store} alt="ai" />
           </a>
         </div>
       </div>
       {/* third proj */}
       <div className="proj_music">
         <div className="proj_music_text">
-          <h1>MUSIC APP</h1>
+          <h1>XPLORA WEBSITE</h1>
 
-          <p>Through integration with the Spotify API, I developed an music application enabling users to seamlessly discover and enjoy their favorite tracks from a vast catalog.</p>
-          <a className="proj_bnt_to_proj" href="https://rafatabian.github.io/music/">EXPLORE PROJECT</a>
+          <p>Rapidly developed and deployed a promotional website for the Xplora app in a single day using Vite, ensuring speed and performance.</p>
+          <a className="proj_bnt_to_proj" href="https://rafatabian.github.io/xplora/">EXPLORE PROJECT</a>
         </div>
         <div className="proj_music_image">
-          <a href="https://rafatabian.github.io/music/">
-            <img src={music} alt="music" />
+          <a href="https://rafatabian.github.io/xplora/">
+            <img src={xplora} alt="music" />
           </a>
         </div>
       </div>

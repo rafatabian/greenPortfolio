@@ -1,12 +1,35 @@
-.about_conatiner {
-    width: 100%;
-    min-height: 100vh;
-    background-color: white;
+.about_main_container{
+     width: 100%;
+    background-color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    padding: 3rem 15px 2rem 15px;
+}
+.about_img_container{
+    width: 380px;
+    min-width: 380px;
+    height: auto;
+}
+.about_img_container > img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.about_conatiner {
+    /* width: 100%; */
+    background-color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     flex-direction: column;
     padding: 3rem 0;
+    margin-left: 3rem;
 }
 
 .about_conatiner h1 {
@@ -35,7 +58,6 @@
 }
 
 .about_conatiner div:nth-child(2) p {
-    text-align: center;
     font-family: "Figtree";
     font-display: optional;
     font-size: 17.3px;
@@ -45,7 +67,8 @@
 }
 
 #about_type_effect {
-    font-size: 17px;
+    font-size: 19px;
+    font-weight: 600;
 }
 
 .about_btn_container {
@@ -53,7 +76,7 @@
 }
 
 .about_btn_container>button:first-child {
-    margin: 0 10px;
+    margin-right: 5px;
     background-color: var(--green);
     color: white;
     font-family: "Figtree";
@@ -87,10 +110,29 @@
 .about_btn_container>a:nth-child(2):hover {
     background-color: rgb(238, 238, 238);
 }
+@media screen and (max-width: 850px) {
+   .about_main_container{
+       flex-direction: column-reverse;
+       justify-content: flex-start;
+   }
+   .about_conatiner {
+       margin: 0 0 0 0;
+       padding: unset;
 
+   }
+   .about_img_container{
+        width: 100%;
+        max-width: 500px;
+        min-width: unset;
+        margin-bottom: 3rem;
+   }
+   .about_img_container > img{
+    max-width: 380px;
+    width: 100%;
+   }
+}
 @media screen and (max-width: 520px) {
     .about_conatiner {
-        padding: 0 15px 6rem 15px;
         min-height: unset;
     }
 }

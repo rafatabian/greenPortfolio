@@ -46,7 +46,7 @@ const Navbar = ({ scrollToSection }) => {
       <div className="navbar_logo">
         <h1>F</h1>
         <a href="https://github.com/rafatabian" aria-label="github"><FaGithub /></a>
-        <a href="https://www.linkedin.com/in/fabian-rata-781389281" aria-label="linkedin"><FaLinkedin /></a>
+        <a href="https://www.linkedin.com/in/fabian-george-rata-781389281/" aria-label="linkedin"><FaLinkedin /></a>
       </div>
 
       {!toggleMenu ? <div className="navbar_mobile_menu"><IoMenu onClick={() => toggleMobileMenu()} /></div> : null}

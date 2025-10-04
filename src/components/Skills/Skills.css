@@ -1,15 +1,14 @@
 .skills_container {
     width: 100%;
-    min-height: 100vh;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 45, 24, 1) 5%, rgba(0, 45, 24, 1) 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 6rem 0 4rem 0;
+    padding: 7rem 0 4rem 0;
 }
 
-.skills_container>h1 {
+.skills_container > h1 {
     color: white;
     position: relative;
     font-family: "Figtree";
@@ -17,7 +16,7 @@
     font-weight: 500;
 }
 
-.skills_container>h1::after {
+.skills_container > h1::after {
     content: "";
     position: absolute;
     width: 60%;
@@ -28,7 +27,7 @@
     bottom: 0;
 }
 
-.skills_container>h2 {
+.skills_container > h2 {
     color: white;
     font-family: "Figtree";
     font-display: optional;

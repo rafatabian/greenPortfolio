@@ -5,10 +5,6 @@ import { SiVite, SiHeroku } from "react-icons/si"
 
 const Skills = () => {
 
-  // to do
-  // add icons
-  // fininsh style in css
-  //  add UI/UX if not added
   return (
     <div className="skills_container">
       <h1>SKILLS</h1>

@@ -44,7 +44,7 @@ const Footer = ({ scrollToSection }) => {
       <div className="footer_links_and_text">
         <div>
           <a href="https://github.com/rafatabian" aria-label="github"><FaGithub /></a>
-          <a href="https://www.linkedin.com/in/fabian-rata-781389281/" aria-label="linkedin"><FaLinkedin /></a>
+          <a href="https://www.linkedin.com/in/fabian-george-rata-781389281/" aria-label="linkedin"><FaLinkedin /></a>
         </div>
         <div>
           <p onClick={() => scrollToSection("home")}>HOME</p>
@@ -54,7 +54,7 @@ const Footer = ({ scrollToSection }) => {
         </div>
         <div>
           <p>Designed with <FaHeart /></p>
-          <p>&#169; 2024 copyright by Fabian</p>
+          <p>&#169; 2025 copyright by Fabian</p>
         </div>
       </div>
 
